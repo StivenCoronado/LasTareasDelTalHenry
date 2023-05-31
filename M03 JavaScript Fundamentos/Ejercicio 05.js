@@ -12,11 +12,11 @@ function esPositivo(num) {
    if (num > 0) {return 'Es positivo';
       
    } else {return 'Es negativo';
-      if (num == 0) {return false;
-         
-      }
       }
 
+   if (num == 0) {return false;
+         
+      }
 }
 esPositivo(15);
 esPositivo(-15);
