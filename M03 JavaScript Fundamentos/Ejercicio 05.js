@@ -67,7 +67,7 @@ function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
-   return euro * 1.2 + ' USD';
+   return euro * 1.2
 }
 deEuroAdolar(200);
 
@@ -76,22 +76,22 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código
-   if (letra.length > 1) {return 'Dato Incorrecto';
+   if (letra.length > 1) {return 'Dato incorrecto';
       
    } else 
       if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
          return 'Es vocal';
       }else {
-         return 'Dato Incorrecto';
+         return 'Dato incorrecto';
       }
    }
-esVocal('a')
-esVocal('e')
-esVocal('i')
-esVocal('o')
-esVocal('u')
-esVocal('j')
-esVocal('aa')
+esVocal('a');
+esVocal('e');
+esVocal('i');
+esVocal('o');
+esVocal('u');
+esVocal('j');
+esVocal('aa');
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
