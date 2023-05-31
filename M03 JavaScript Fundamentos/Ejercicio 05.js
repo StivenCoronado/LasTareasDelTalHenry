@@ -8,11 +8,15 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
+
    if (num > 0) {return 'Es positivo';
       
    } else {return 'Es negativo';
-      
-   }
+      if (num == 0) {return false;
+         
+      }
+      }
+
 }
 esPositivo(15);
 esPositivo(-15);
@@ -44,8 +48,7 @@ obtenerSaludo('Camilo');
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
-   return alto*ancho + ' cm2';
-}
+   return alto*ancho;
 obtenerAreaRectangulo(5, 7);
 
 function retornarPerimetro(lado) {
