@@ -4,10 +4,9 @@
 function devolverString(string) {
    // Debe retornar un string.
    // Tu código:
-   devolverString = '¡¡HOLA MUNDO!!';
-   return devolverString;
+   return string;
 }
-devolverString();
+devolverString('DiosNoExisteSonLosPapás');
 // ⛔️ "X" e "Y" son números.
 
 function suma(x, y) {

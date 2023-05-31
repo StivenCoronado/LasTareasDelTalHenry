@@ -18,31 +18,66 @@ function tienenMismaLongitud(str1, str2) {
    // Retorna true si los dos strings tienen la misma longitud.
    // De lo contrario, retorna false.
    // Tu código:
+   if (str1.length === str2.length) {return true
+      
+   } else {return false
+      
+   }
 }
+tienenMismaLongitud('Mango', 'Cinco')
+tienenMismaLongitud('Hijo', 'Electroencefalografista')
 
 function menosQueNoventa(num) {
    // Retorna true si el argumento "num" es menor que noventa.
    // De lo contrario, retorna false.
    // Tu código:
+   if (num < 90) {return true
+      
+   } else {return false
+      
+   }
 }
+menosQueNoventa(65)
+menosQueNoventa(95)
 
 function mayorQueCincuenta(num) {
    // Retorna true si el argumento "num" es mayor que cincuenta.
    // De lo contrario, retorna false.
    // Tu código:
+   if (num > 50) {return true
+      
+   } else {return false
+      
+   }
 }
+mayorQueCincuenta(40)
+mayorQueCincuenta(95)
 
 function esPar(num) {
    // Retorna true si "num" es par.
    // De lo contrario, retorna false.
    // Tu código:
+   if (num%2==0) {return true
+      
+   } else {return false
+      
+   }
 }
+esPar(150)
+esPar(3)
 
 function esImpar(num) {
    // Retorna true si "num" es impar.
    // De lo contrario, retorna false.
    // Tu código:
+   if (num%2!=0) {return true
+      
+   } else {return false
+      
+   }
 }
+esImpar(150)
+esImpar(3)
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
