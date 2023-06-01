@@ -5,12 +5,12 @@ function obtenerMayor(x, y) {
    // Retornar el número más grande.
    // Si son iguales, retornar cualquiera de los dos.
    // Tu código:
-   if (x > y) {return x;
+   while (x > y) {return x;
    }
-   if (x < y) {return y;
+   while (x < y) {return y;
    }
 
-   if (x === y) {return (x||y);
+   while (x === y) {return (x||y);
       
    }
 }
@@ -26,7 +26,7 @@ function mayoriaDeEdad(edad) {
       
    }
 }
-
+|
 function conection(status) {
    // El argumento "status" representa el estado de conexión de un usuario.
    // Si el estado es igual a 1, el usuario está "Online".
@@ -34,6 +34,12 @@ function conection(status) {
    // De lo contrario, presumimos que el usuario está "Offline".
    // Retornar el estado de conexión del usuario.
    // Tu código:
+   while (status == 1){return 'Online';
+    }
+   while (status == 2){return 'Away';
+    }
+   while (status != 1 || 2){return 'Offline'}
+
 }
 
 function saludo(idioma) {
@@ -42,8 +48,29 @@ function saludo(idioma) {
    // Si "idioma" es "mandarin", devuelve "Ni Hao!".
    // Si "idioma" es "ingles", devuelve "Hello!".
    // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
-   // Tu código:
+   // Tu código: 
+   
+   switch(idioma){
+      case 'aleman':
+         return 'Guten Tag!' ;
+         break ;
+      case 'mandarin':
+         return 'Ni Hao!' ;
+         break ;
+      case 'ingles':
+         return 'Hello!' ;
+         break ;
+      default:
+         return 'Hola!'
+         break ;
+
+   }
+
 }
+
+
+
+      
 
 function colors(color) {
    // La función recibe un color. Retornar el string correspondiente:
@@ -54,19 +81,50 @@ function colors(color) {
    // Si no es ninguno de esos colores           --> "Color not found".
    // IMPORTANTE: utilizar el statement SWITCH.
    // Tu código:
+   switch(color){
+      case 'blue':
+         return 'This is blue' ;
+         break ;
+      case 'red':
+         return 'This is red' ;
+         break ;
+      case 'green':
+         return 'This is green' ;
+         break ;
+      case 'orange':
+         return 'This is orange'
+      default:
+         return 'Color not found'
+         break ;
+
+   }
+
 }
 
 function esDiezOCinco(num) {
    // Retornar true si "num" es 10 o 5.
    // De lo contrario, retornar false.
    // Tu código:
+   while (num == 10){return true;
+}
+   while (num == 5){return true;
+}
+   while (num != 5 || 10){return false;
+   }
+
 }
 
 function estaEnRango(num) {
    // Retornar true si "num" es menor que 50 y mayor que 20.
    // De lo contrario, retornar false.
    // Tu código:
+ while (num < 50 && num > 20) {return true;
+ }
+ while (num >= 50 || num <= 20) {return false;
 }
+   
+}
+  
 
 function esEntero(num) {
    // Retornar true si "num" es un entero, ya sea positivo, negativo o cero.
@@ -75,6 +133,11 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
+   for (var i = 1 ; num % i == 0 ; i++) {return true;  
+   }
+   if (num % i == 0) {return true
+   }else {return false
+   }
 }
 
 function fizzBuzz(num) {
