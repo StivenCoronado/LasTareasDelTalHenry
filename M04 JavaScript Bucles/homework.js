@@ -26,7 +26,7 @@ function mayoriaDeEdad(edad) {
       
    }
 }
-|
+
 function conection(status) {
    // El argumento "status" representa el estado de conexión de un usuario.
    // Si el estado es igual a 1, el usuario está "Online".
@@ -133,7 +133,7 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
-   for (var i = 1 ; num % i == 0 ; i++) {return true;  
+   for (var i = 1 ; num % i== 0  ; i++) {return true;  
    }
    if (num % i == 0) {return true
    }else {return false
