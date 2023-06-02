@@ -202,12 +202,26 @@ function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
+   while (valor != true) {return 'Soy falso'; 
+    }
+   while (valor === true) {return 'Soy verdadero';
+    }  
 }
+
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
+   if (num) {
+      for(x=num; x.length = 3; x++){return true}
+      for(x=num; x.length > 3 || x.length < 3; x++){return false}
+      
+   }
+  
+   
+   
+   
 }
 
 function doWhile(num) {
